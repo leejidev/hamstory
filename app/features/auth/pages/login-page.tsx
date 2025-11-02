@@ -5,7 +5,7 @@ import InputPair from "~/common/components/input-pair";
 import AuthButtons from "../components/auth-buttons";
 
 export const meta: Route.MetaFunction = () => {
-  return [{ title: "Login | wemake" }];
+  return [{ title: "로그인 | Hamstory" }];
 };
 
 export default function LoginPage() {

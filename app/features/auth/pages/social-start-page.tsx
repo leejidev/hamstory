@@ -1,10 +1,7 @@
 import type { Route } from "./+types/social-start-page";
 
 export const meta: Route.MetaFunction = () => {
-  return [
-    { title: "Social Start | wemake" },
-    { name: "description", content: "Start social authentication" },
-  ];
+  return [{ title: "소셜 인증 | Hamstory" }];
 };
 
 export default function SocialStartPage({ loaderData }: Route.ComponentProps) {

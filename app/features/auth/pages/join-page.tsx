@@ -5,7 +5,7 @@ import InputPair from "~/common/components/input-pair";
 import AuthButtons from "../components/auth-buttons";
 
 export const meta: Route.MetaFunction = () => {
-  return [{ title: "Join | wemake" }];
+  return [{ title: "회원가입 | Hamstory" }];
 };
 
 export default function JoinPage() {

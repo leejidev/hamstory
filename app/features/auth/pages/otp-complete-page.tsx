@@ -4,7 +4,7 @@ import InputPair from "~/common/components/input-pair";
 import { Button } from "~/common/components/ui/button";
 
 export const meta: Route.MetaFunction = () => {
-  return [{ title: "OTP 인증 | wemake" }];
+  return [{ title: "OTP 인증 | Hamstory" }];
 };
 
 export default function OtpCompletePage() {

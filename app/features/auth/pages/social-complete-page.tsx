@@ -1,10 +1,7 @@
 import type { Route } from "./+types/social-complete-page";
 
 export const meta: Route.MetaFunction = () => {
-  return [
-    { title: "Social Complete | wemake" },
-    { name: "description", content: "Complete social authentication" },
-  ];
+  return [{ title: "소셜 인증 | Hamstory" }];
 };
 
 export default function SocialCompletePage({

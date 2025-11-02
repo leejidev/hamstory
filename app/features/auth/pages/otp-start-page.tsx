@@ -4,7 +4,7 @@ import { Form } from "react-router";
 import InputPair from "~/common/components/input-pair";
 
 export const meta: Route.MetaFunction = () => {
-  return [{ title: "OTP 인증 | wemake" }];
+  return [{ title: "OTP 인증 | Hamstory" }];
 };
 
 export default function OtpStartPage() {
