@@ -3,6 +3,7 @@ import {
   boolean,
   decimal,
   integer,
+  jsonb,
   pgEnum,
   pgTable,
   text,
@@ -40,8 +41,8 @@ export const sharedLayouts = pgTable("shared_layouts", {
     .notNull()
     .references(() => profiles.profile_id),
   description: text(),
-  likes: integer().notNull().default(0),
   comments_enabled: boolean().notNull().default(true),
+  stats: jsonb().notNull().default({ views: 0, reviews: 0, upvotes: 0 }),
   created_at: timestamp().notNull().defaultNow(),
   updated_at: timestamp().notNull().defaultNow(),
 });

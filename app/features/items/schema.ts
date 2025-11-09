@@ -3,6 +3,7 @@ import {
   boolean,
   decimal,
   integer,
+  jsonb,
   pgEnum,
   pgTable,
   text,
@@ -27,6 +28,7 @@ export const items = pgTable("items", {
   purchase_url: text().notNull(),
   purchase_price: decimal({ mode: "string" }).notNull(),
   is_active: boolean().notNull().default(true),
+  stats: jsonb().notNull().default({ views: 0, reviews: 0, upvotes: 0 }),
   created_at: timestamp().notNull().defaultNow(),
   updated_at: timestamp().notNull().defaultNow(),
 });
